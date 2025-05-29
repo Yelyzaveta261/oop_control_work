@@ -1,16 +1,17 @@
 // Клас для представлення думки користувача
 public class Opinion {
+
     // Унікальний ідентифікатор думки
-    private int id;
+    private int id; // private для того, щоб був доступ тільки в середині класу через геттери та сеттери
 
     // Ім'я автора
-    private String authorName;
+    private String authorName; // private захищаємо дані, доступ лише через методи
 
     // Текст думки
-    private String content;
+    private String content; //  private забезпечує інкапсуляцію, зміну через сеттер
 
     // Оцінка або рейтинг (наприклад, від 1 до 5)
-    private int rating;
+    private int rating; // private рейтинг має бути керованим лише через методи
 
     // Конструктор класу
     public Opinion(int id, String authorName, String content, int rating) {
