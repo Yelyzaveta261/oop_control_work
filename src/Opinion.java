@@ -52,4 +52,11 @@ public class Opinion {
     public void setRating(int rating) {
         this.rating = rating;
     }
+
+    // Метод для зручного виводу об'єкта у консоль
+    @Override
+    public String toString() {
+        return "Думка #" + id + " від " + authorName + ":\n" +
+                content + "\nОцінка: " + rating + "/5\n";
+    }
 }
